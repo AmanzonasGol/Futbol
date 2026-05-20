@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ ADICTOS AL FUCHIBOL F. C. ⚽</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+}
+
+    /* PORTADA */
+    .portada{
+        height: 90vh;
+        background: url('portada.jpg') center/contain no-repeat;
+background-color:rgba(0, 0, 0, 0.027);b
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        position:relative;
+    }
+
+
+    
+
+    .titulo{
+    position:relative;
+    z-index:2;
+
+    font-size:4.5rem;
+    font-weight:bold;
+
+    color:#ffd700;
+
+    text-shadow:
+    0 0 10px #ffd700,
+    0 0 20px #ffcc00,
+    0 0 40px #ff9900;
+}
+
+    /* GALERÍA */
+    .contenedor{
+        padding:50px 8%;
+    }
+
+    .subtitulo{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:2rem;
+        color:#ffd700;
+    }
+
+    .galeria{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap:25px;
+    }
+
+    .card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:15px;
+    overflow:hidden;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+    .card:hover{
+        transform:scale(1.05);
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .card h3{
+        padding:15px;
+        text-align:center;
+        color:#fff;
+    }
+
+    /* UBICACIÓN */
+    .ubicacion{
+        margin-top:50px;
+        background:#145214;
+        padding:25px;
+        border-radius:15px;
+        display:flex;
+        align-items:center;
+        gap:20px;
+        border:2px solid #ffd700;
+    }
+
+    .ubicacion img{
+        width:180px;
+        border-radius:10px;
+        border:2px solid white;
+    }
+
+    .ubicacion-info h2{
+        color:#ffd700;
+        margin-bottom:10px;
+    }
+
+    .card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+    .ubicacion-info p{
+        font-size:1.1rem;
+        line-height:1.5;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        background:#062706;
+        margin-top:40px;
+        font-size:0.9rem;
+        
+    }
+
+
+</style>
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<section class="portada">
+    <h1 class="titulo">⚽ ADICTOS AL FUCHIBOL F. C. ⚽</h1>
+</section>
+
+<!-- GALERÍA -->
+<section class="contenedor">
+
+    <h2 class="subtitulo">⚽ ADICTOS AL FUCHIBOL F. C. ⚽</h2>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img src="monex1.jpg" alt="">
+            <h3>"Goat"</h3>
+        </div>
+
+        <div class="card">
+            <img src="monex2.jpg"">
+            <h3>Entrenamiento</h3>
+        </div>
+
+        <div class="card">
+            <img src="monex3.jpg"">
+            <h3>Celebración</h3>
+        </div>
+
+        <div class="card">
+        <video autoplay muted loop playsinline controls>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+        <h3>Calentamiento</h3>
+    </div>
+
+    <!-- IMAGEN 1 -->
+    <div class="card">
+    <video autoplay muted loop playsinline controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <h3>Estirando</h3>
+    </div>
+
+    <!-- IMAGEN 2 -->
+    <div class="card">
+    <video autoplay muted loop playsinline controls>
+            <source src="video3.mp4" type="video/mp4">
+        </video>
+        <h3>Celebracion</h3>
+    </div>
+
+    <!-- IMAGEN 3 -->
+    <div class="card">
+        <img src="monex4.jpg">
+        <h3>Pasión por el Fútbol</h3>
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- UBICACIÓN -->
+    <div class="ubicacion">
+
+        <img src="monex4.jpg" alt="Mapa">
+
+        <div class="ubicacion-info">
+            <h2>📍 Ubicación</h2>
+            <p>
+                Cancha Principal "Amazonas Gol" - Lima,Puente piedra Perú<br>
+                Al costado de un telo <br>
+                Full mameys todos los sabados y domingos ⚽
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    ⚽ ADICTOS AL FUCHIBOL F. C. © 2026
+</footer>
+
+</body>
+</html>
